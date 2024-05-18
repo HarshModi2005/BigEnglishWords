@@ -9,5 +9,7 @@ from keras.layers import Dense
 from keras.models import load_model
 
 #Reading the data
-data = pd.read_csv('words.csv')
-cities = data['word'].tolist()
+data = pd.read_csv('worldcities.csv')
+cities = data['city'].tolist()
+
+print(cities)
