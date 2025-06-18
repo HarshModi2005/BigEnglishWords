@@ -2,7 +2,7 @@
 
 A neural network-based name generator that learns patterns from real names and generates new, plausible-sounding names. The model uses character-level sequence prediction to create names that follow similar phonetic and structural patterns as the training data.
 
-## 🚀 Features
+## Features
 
 - **Character-level neural network**: Uses embeddings and sequence prediction
 - **Configurable generation**: Control name length and generation parameters
@@ -10,7 +10,7 @@ A neural network-based name generator that learns patterns from real names and g
 - **Clean architecture**: Well-structured, documented code
 - **Easy to use**: Simple CLI interface for training and generation
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BigEnglishWords/
@@ -29,7 +29,7 @@ BigEnglishWords/
 └── docs/                  # Documentation
 ```
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The neural network uses a simple but effective architecture:
 
@@ -39,7 +39,7 @@ The neural network uses a simple but effective architecture:
 
 The model predicts the next character based on the previous 3 characters, using '.' as start/end tokens.
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**:
    ```bash
@@ -52,7 +52,7 @@ The model predicts the next character based on the previous 3 characters, using 
    pip install tensorflow numpy pandas torch matplotlib
    ```
 
-## 📚 Usage
+## Usage
 
 ### Training a New Model
 
@@ -96,14 +96,14 @@ Generated names:
 10. Luna
 ```
 
-## 📊 Data Sources
+## Data Sources
 
 - **names.txt**: Collection of 32,000+ popular names
 - **names.csv**: Names with gender classifications
 - **words.csv**: English words with frequency counts
 - **worldcities.csv**: Global cities dataset
 
-## 🔧 Customization
+## Customization
 
 ### Modifying Training Parameters
 
@@ -121,14 +121,14 @@ BATCH_SIZE = 50        # Training batch size
 
 Replace `data/names.txt` with your own name dataset (one name per line).
 
-## 🧪 Model Performance
+## Model Performance
 
 The model typically achieves:
 - **Training accuracy**: ~60-70%
 - **Validation accuracy**: ~55-65%
 - **Generated names**: Sound natural and follow linguistic patterns
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -136,11 +136,11 @@ The model typically achieves:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔍 Technical Details
+## Technical Details
 
 ### Character Embedding
 - Each character (a-z, '.') is mapped to a 10-dimensional vector
@@ -157,7 +157,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - Applies heuristics to avoid unrealistic patterns (triple letters, too many vowels)
 - Samples from top predictions with controlled randomness
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Model not loading?**
 - Ensure the model file exists in the correct path
