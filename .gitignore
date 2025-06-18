@@ -56,4 +56,5 @@ logs/
 *.csv
 *.txt
 !requirements.txt
-!README.txt 
+!README.txt
+!examples/*.txt 
